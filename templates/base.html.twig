@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %} Forom {% endblock %}</title>
         {% block stylesheets %}
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spartan&display=swap">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
@@ -20,7 +20,7 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="{{ path('app_homepage') }}">
                     <p class="pl-2 d-inline font-weight-bold" style="color: #444;">
-                        Cauldron Overflow
+                        Forom
                     </p>
                 </a>
 
@@ -55,15 +55,15 @@
                                     </li>
                                 {% endif %}
                                 <li>
-                                    <a class="dropdown-item" href="{{ path('app_profile_show') }}">Profile</a>
+                                    <a class="dropdown-item" href="{{ path('app_profile_show') }}">Profil</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="{{ path('app_logout') }}">Log Out</a>
+                                    <a class="dropdown-item" href="{{ path('app_logout') }}">Se déconnecter</a>
                                 </li>
                             </ul>
                         </div>
                     {% else %}
-                        <a class="nav-link text-black-50" href="{{ path('app_login') }}">Log In</a>
+                        <a class="nav-link text-black-50" href="{{ path('app_login') }}">Connexion</a>
                     {% endif %}
                 </div>
             </div>
@@ -72,7 +72,7 @@
         {% block body %}{% endblock %}
 
         <footer class="mt-5 p-3 text-center">
-            Made with <i style="color: red;" class="fa fa-heart"></i> by the guys and gals at <a style="color: #444; text-decoration: underline;" href="https://symfonycasts.com">SymfonyCasts</a>
+            Editer <i style="color: red;" class="fa fa-heart"></i> par UnderGround <a style="color: #444; text-decoration: underline;" href="https://github.com/UnderGround54">Git</a>
         </footer>
     </body>
 </html>
